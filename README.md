@@ -12,3 +12,16 @@ Or you can access the documentation by going to the pallet ctrl+shift+P or cmd+s
 What's more provided by this fork:
 
 - The current selected text will be the search term if any.
+
+
+# Local Development Instructions
+- install npm [here](https://nodejs.org/en/download/).
+- do `npm install`
+- run `Run Extension` in Run and Debug tab
+- see changes
+
+# Build Instructions
+- do above
+- do `npm install -g @vscode/vsce`
+- do `vsce package`
+- vsix is in current directory

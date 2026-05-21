@@ -2,17 +2,16 @@
 	"name": "cpp-reference-and-documentation",
 	"displayName": "Cpp Reference and Documentation",
 	"description": "Search Cpp Documentation, cppreference.com",
-	"version": "0.0.5",
-	"publisher": "FederAndInk",
+	"version": "0.0.6",
+	"publisher": "OfficialKris",
 	"author": {
 		"name": "kunalg",
 		"url": "https://github.com/gursahani/search-cpp-documentation.git"
 	},
 	"maintainers": [
 		{
-			"name": "FederAndInk",
-			"url": "https://github.com/FederAndInk",
-			"email": "federandink@gmail.com"
+			"name": "OfficialKris",
+			"url": "https://github.com/OfficialKris"
 		}
 	],
 	"contributors": [
@@ -24,10 +23,20 @@
 			"name": "FederAndInk",
 			"url": "https://github.com/FederAndInk",
 			"email": "federandink@gmail.com"
+		},
+		{
+			"name": "OfficialKris",
+			"url": "https://github.com/OfficialKris/search-cpp-documentation.git"
 		}
 	],
+	"files": [
+		"LICENSE.txt",
+		"out/extension.js",
+		"out/extension.js.map",
+		"img/cpp_logo.png"
+	],
 	"engines": {
-		"vscode": "^1.31.0"
+		"vscode": "^1.45.0"
 	},
 	"icon": "img/cpp_logo.png",
 	"repository": {
@@ -74,17 +83,10 @@
 	"scripts": {
 		"vscode:prepublish": "tsc -p ./",
 		"compile": "tsc -p ./",
-		"watch": "tsc -w -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install"
-	},
-	"dependencies": {
-		"cors": "^2.8.5",
-		"xmlhttprequest": "^1.8.0"
+		"watch": "tsc -w -p ./"
 	},
 	"devDependencies": {
-		"vscode": "^1.1.29",
-		"@types/node": "^10.5.2",
-		"tslint": "^5.11.0",
+		"@types/vscode": "~1.45.0",
 		"typescript": "^2.9.2"
 	}
 }
